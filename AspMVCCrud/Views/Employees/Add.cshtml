@@ -1,0 +1,40 @@
+﻿@model AspMVCCrud.Models.AddEmployeeViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<nav class="navbar navbar-light d-flex justify-content-center align-items-center bg-light">
+    <span class="navbar-text fw-bold">
+        Add Employee
+    </span>
+</nav>
+
+<form method="post" class="mt-5" action="Add">
+    <div class="form-group">
+        <label for="">Name:</label>
+        <input type="text" class="form-control" asp-for="Name">
+        
+    </div>
+    <div class="form-group">
+        <label for="">Email:</label>
+        <input type="email" class="form-control" asp-for="Email">
+
+    </div>
+    <div class="form-group">
+        <label for="">Date of Birth:</label>
+        <input type="date" class="form-control" asp-for="Dob">
+
+    </div>
+    <div class="form-group">
+        <label for="">Department:</label>
+        <input type="text" class="form-control" asp-for="Department">
+
+    </div>
+    <div class="form-group">
+        <label for="">Salary:</label>
+        <input type="number" class="form-control" asp-for="Salary">
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
